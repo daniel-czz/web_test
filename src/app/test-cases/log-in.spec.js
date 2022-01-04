@@ -40,7 +40,7 @@ describe('web-admine', function() {
     browser.sleep(3500)
     element(by.buttonText('Sign in')).click()
     browser.sleep(3500)
-    
-    expect (element(by.bing('error')).getText()).toEqual('password not match with username')
+    expect (element(by.css('ngb-alert')).getText()).toEqual('password not match with username')
   });
+
 });
